@@ -3,16 +3,16 @@ package edu.educacionit.component;
 import javax.persistence.*;
 
 public class ConectorJPA {
-    private EntityManager entityManager;
+    private EntityManager em;
 
     public ConectorJPA() {
         EntityManagerFactory emf =
-                Persistence.createEntityManagerFactory("mariadb");
-
+                Persistence.createEntityManagerFactory("pg");
+        em = emf.createEntityManager();
     }
 
     public EntityManager getEntityManager() {
-        return entityManager;
+        return em;
     }
 
 }

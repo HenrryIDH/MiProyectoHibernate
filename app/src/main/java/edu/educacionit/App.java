@@ -10,7 +10,7 @@ public class App {
 
     public static void main(String[] args) {
         System.out.println("Curso JPA - Hibernate");
-        Runnable r = new EjemploInsercion();
+        Runnable r = new EjemploQueryClientSide();
         r.run();
     }
 }
