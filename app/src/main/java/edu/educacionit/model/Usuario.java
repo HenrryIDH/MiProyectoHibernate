@@ -17,6 +17,7 @@ public class Usuario {
 
     @Column(name = "tipo_de_usuario")
     public TipoDeUsuario tipoDeUsuario;
+    public Double saldo;
 
     @Override
     public String toString() {

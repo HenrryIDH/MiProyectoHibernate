@@ -28,6 +28,7 @@ public class EjemploInsercion implements Runnable {
             usu.tipoDeUsuario = (new Random().nextInt() % 2 == 0 ) ?
                     TipoDeUsuario.USUARIO_ESTANDAR :
                     TipoDeUsuario.USUARIO_ROOT;
+            usu.saldo = Math.floor(new Random().nextDouble() * 10000);
 
             EntityTransaction tx =  em.getTransaction();
             tx.begin();
